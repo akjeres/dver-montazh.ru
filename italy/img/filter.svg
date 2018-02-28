@@ -1,0 +1,13 @@
+
+<svg width="1024px" height="600px" viewBox="0 0 1024 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.1 (28215) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="44.7532654%" cy="7.49088542%" fx="44.7532654%" fy="7.49088542%" r="101.67764%" id="radialGradient-1">
+            <stop stop-color="#FAFFF5" offset="0%"></stop>
+            <stop stop-color="#FDFBFD" offset="40.2906875%"></stop>
+            <stop stop-color="#E4FCFF" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <rect id="Rectangle-5" stroke="none" fill="url(#radialGradient-1)" fill-rule="evenodd" x="0" y="0" width="1024" height="600"></rect>
+</svg>

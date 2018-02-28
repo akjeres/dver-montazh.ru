@@ -1,0 +1,22 @@
+<?php
+/* @var $model Page */
+/* @var $this PageController */
+
+if ($model->layout) {
+    $this->layout = "//layouts/{$model->layout}";
+}
+
+$this->title = $model->title;
+$this->breadcrumbs = $this->getBreadCrumbs();
+$this->description = $model->description ?: Yii::app()->getModule('yupe')->siteDescription;
+$this->keywords = $model->keywords ?: Yii::app()->getModule('yupe')->siteKeyWords;
+?>
+<div class="container">	
+	<div class="main__title grid">
+	    <h1 class=""><?= $model->title_short; ?></h1>
+	</div>
+	<div class="main__catalog grid">
+	    <?= $model->body; ?>
+	</div>
+</div>
+

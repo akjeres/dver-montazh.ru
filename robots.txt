@@ -1,0 +1,27 @@
+# For all robots...
+User-agent: *
+
+# Disallow backend and default controllers
+Disallow: /yupe/backend*
+Disallow: /*/default*
+Disallow: /index.php*
+Disallow: /backend*
+Disallow: /recovery
+Disallow: /registration
+Disallow: *?sort=*
+Disallow: *&sort=*
+Disallow: /login
+Disallow: /cart*
+Disallow: /favorite*
+Disallow: /callback
+Disallow: *?0*
+Disallow: *?1*
+Disallow: *?2*
+Disallow: *?3*
+Disallow: *?4*
+Disallow: *?5*
+Disallow: /payment/*
+Disallow: /order/*
+Disallow: /comment/comment/captcha.hash
+Host: dver-montazh.ru
+Sitemap: http://dver-montazh.ru/sitemap.xml

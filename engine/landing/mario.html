@@ -1,0 +1,485 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Cache-Control" content="private, max-age=3600" />
+    <meta http-equiv="Expires" content="Thu, 31 Dec 2037 23:55:55 GMT" />
+
+    <link rel="shortcut icon" href="/favicon.png?3">
+    <link rel="apple-touch-icon" href="/favicon.png?3">
+    <meta content="/favicon.png?3" itemprop="image">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="viewport" content="initial-scale = 1" />
+    <title>Купить двери Mario Rioli. Магазин дверей Санкт Петербург.</title>
+
+    <meta name="description" content="Купить двери Mario Rioli. Магазин дверей Санкт Петербург.">
+    <meta name="keywords" content="Купить двери Mario Rioli. Магазин дверей Санкт Петербург.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+<div class="modal fade" id="ordermodal" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <h5 class="modal-title" id="modaltitle">Свяжитесь с нами!</h5>
+      </div>
+      <div class="modal-body">
+        <div id="cbtext">
+            <p>Позвоните нам по телефону:</p>
+        
+            <h1>8 (812) 905 30 04</h1>
+            <hr />
+            <p>или оставьте свой телефон - мы Вам перезвоним:</p>
+        </div>
+        <div id="spectext" style="display:none;">
+            <p>Наш специалист позвонит Вам и подъедет в любое удобное время на объект. Просто оставьте заявку или позвоните по телефону 8 (812) 905 30 04</p>
+        </div>
+        <div id="doortext" style="display:none;">
+            <p>Отправьте заявку на покупку двери по акции и мы свяжемся с Вами! Наш телефон для связи: 8 (812) 905 30 04</p>
+        </div>
+        
+        <div class="alert" id="myModalAlert" style="display: none"></div>
+        
+        <p id="result" style="display:none"></p>
+        <p id="error" class="r" style="display:none; color:#f20"></p>
+        <form class="form-horizontal" id="order-form">
+                     
+                    <div class="form-group" id="email" style="display: none;">
+                        <label class="col-md-3">Email</label>
+                        <div class="col-md-9">
+                            <input type="text" name="email" class="form-control" id="email-i">
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="display: none;" id="doorInp">
+                        <label class="col-md-3">Модель</label>
+                        <div class="col-md-9">
+                            <input type="text" name="model" class="form-control" id="door-i" required="">
+                        </div>
+                    </div>
+
+                    <div class="form-group" id="contact">
+                        <label class="col-md-3">Ваше имя</label>
+                        <div class="col-md-9">
+                            <input type="text" name="contact" class="form-control" required="">
+                        </div>
+                    </div>
+                    <div class="form-group" id="phone" style="display: block;">
+                        <label class="col-md-3">Телефон</label>
+                        <div class="col-md-9">
+                            <input type="text" name="phone" class="form-control" id="phone-i" required="">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group" style="display: none;">
+                        
+                        <div class="col-md-9">
+                            <input type="text" name="type" class="form-control" id="type" required="">
+                        </div>
+                    </div>
+                    <div class="form-group" id="comment" style="display: none;">
+                        <label class="col-md-3">Сообщение</label>
+                        <div class="col-md-9">
+                            <textarea rows="6" cols="30" placeholder="Сообщение" class="form-control" name="comment" id="commenttext">Требуется обратный звонок</textarea>
+                        </div>
+                    </div>
+                    
+                </form>
+      </div>
+      <div class="modal-footer">
+       <div class="left">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+        </div>
+        <div class="right">
+            <button type="submit" class="btn btn-success" id="order-send" form="order-form">Отправить</button>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+    </div>
+</div>
+
+
+
+
+    <header>
+        
+        <nav id="nav-main" class="navbar menu-fixed">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="row text-center hidden-sm hidden-md hidden-lg">
+                        <div class="col-xs-2">
+                            <div class="row text-right">
+                                <div class="col-xs-12"><a href="mailto:order@dver-montazh.ru" target="_blank"><img src="img/letter.svg" alt="Написать письмо" title="Написать письмо" /></a></div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-xs-8">
+                            <div class="logo-fixed shadowed">
+                                <img src="img/logo-fixed-shadow.svg" alt="" />
+                            </div>
+                            <div class="logo-fixed">
+                                <img src="img/logo-fixed.svg" alt="" />
+                            </div>
+                            <div class="logo">
+                                <img src="img/logo.svg" alt="Двери">
+                            </div>
+                        </div>
+                        <div class="col-xs-2">
+                            <div class="row text-left">
+                                
+                                
+                                <div class="col-xs-12"><a href="#" id="cb" class="r" data-toggle="modal" data-target="#ordermodal"><img src="img/phone.svg" alt="Свяжитесь с нами" title="Свяжитесь с нами" /></a></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-main-nav">
+                    <div class="row text-center">
+                        <div class="col-xs-4">
+                            <div class="row text-right">
+                                <div class="col-sm-2"><a href="mailto:order@dver-montazh.ru" target="_blank"><img src="img/letter.svg" alt="Написать письмо" title="Написать письмо" /></a></div>
+                                <div class="col-sm-5 menu-item"><a href="#advantages">Двери</a></div>
+                                <div class="col-sm-5 menu-item"><a href="#sale">Акция</a></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="logo-fixed shadowed">
+                                <img src="img/logo-fixed-shadow.svg" alt="" />
+                            </div>
+                            <div class="logo-fixed">
+                                <img src="img/logo-fixed.svg" alt="" />
+                            </div>
+                            <div class="logo">
+                                <img src="img/logo.svg" alt="Двери">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="row text-left">
+                                
+                                <div class="col-sm-5 menu-item"><a href="#reviews">Отзывы</a></div>
+                                <div class="col-sm-5 menu-item"><a href="#map">Магазины</a></div>
+                                <div class="col-sm-2"><a href="#" id="cbb" class="r" data-toggle="modal" data-target="#ordermodal"><img src="img/phone.svg" alt="Свяжитесь с нами" title="Свяжитесь с нами" /></a></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+    </header>
+    <div class="fixedAir"></div>
+    <section id="mainslide">
+        <div class="filter"></div>
+        <div class="bcg"></div>
+        <div class="mainslide-text">
+            <h1>Mario Rioli - <br />настоящая <strong>Италия</strong></h1>
+<p>Экологичные материалы, итальянское качество цена от завода. </p>
+            <a href="#" class="btn" id="spec" class="r" data-toggle="modal" data-target="#ordermodal">ВЫЗВАТЬ СПЕЦИАЛИСТА</a>
+            <br /><br /><b>*Вызов специалиста и подбор двери на месте - бесплатно!</b>
+        </div>
+    </section>
+
+    <section id="advantages">
+        <div class="container">
+            <div class="b-thedoor">
+                <img src="img/thedoor.svg" alt="" />
+            </div>
+            <div class="row mt-150">
+                <div class="col-sm-4">
+                    <div class="item text-right">
+                        <h3>Качество</h3>
+                        <p>Легендарное итальянское качество при полной автоматизации всех процессов от сушки древесины до упаковки готовой продукции</p>                    
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    
+                </div>
+                <div class="col-sm-4">
+                    <div class="item text-left">
+                        <h3>Долговечность</h3>
+                        <p>Новейшее оборудование и отлаженный техпроцесс дают 3 года гарантии и 15 лет эксплуатации</p>                    
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="item text-right">
+                        <h3>Экологичность</h3>
+                        <p>При производстве дверей мы заботимся о вас и используем только экологически чистые материалы</p>                    
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    
+                </div>
+                <div class="col-sm-4">
+                    <div class="item text-left">
+                        <h3>Итальянский дизайн</h3>
+                        <p>Презентабельный дизайн и использование различных отделочных материалов - основа нашего модельного ряда</p>                    
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="item text-right">
+                        <h3>Шумоизоляция</h3>
+                        <p>Тишина и спокойствие в Вашем доме с дверьми Mario Rioli</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    
+                </div>
+                <div class="col-sm-4">
+                    <div class="item text-left">
+                        <h3>Индивидуальность</h3>
+                        <p>Вы можете создать свою уникальную дверь из разнообразия вариантов отделки, стекла, обрамлений</p>                    
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="sale">
+        
+        <h2>Акция!</h2>
+        <p>Успейте получить итальянскую дверь!</p>
+        <div class="timer">
+            <p id="countdown">20: 17: 33: 59</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <a href="#" id="d1" class="r" data-toggle="modal" data-target="#ordermodal">
+                        <div class="door-preview">
+                            <div class="circle"></div>
+                            <div class="pic">
+                                <img src="img/ma1.png" alt="" />
+                            </div>
+                            <div class="lbl"><img src="img/discount.svg" alt="" /></div>
+                        </div>
+                        <p class="goods" id="d1txt">PRIMO AMORE</p>
+                        <p class="price"><span class="oldprice">32 715</span> 21 510 <i class="fa fa-rub" aria-hidden="true"></i></p>
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#" id="d2" class="r" data-toggle="modal" data-target="#ordermodal">
+                        <div class="door-preview">
+                            <div class="circle"></div>
+                            <div class="pic">
+                                <img src="img/m1.png" alt="" />
+                            </div>
+                            <div class="lbl"><img src="img/discount.svg" alt="" /></div>
+                        </div>
+                        <p class="goods" id="d2txt">MINIMO LIGHT</p>
+                        <p class="price"><span class="oldprice">19 700</span> 13 200 <i class="fa fa-rub" aria-hidden="true"></i></p>
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#" id="d3" class="r" data-toggle="modal" data-target="#ordermodal">
+                        <div class="door-preview">
+                            <div class="circle"></div>
+                            <div class="pic">
+                                <img src="img/m3.png" alt="" />
+                            </div>
+                            <div class="lbl"><img src="img/discount.svg" alt="" /></div>
+                        </div>
+                        <p class="goods" id="d3txt">SALUTO</p>
+                        <p class="price"><span class="oldprice">21 815=</span> 15 310 <i class="fa fa-rub" aria-hidden="true"></i></p>
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="btn" id="orderDoor" class="r" data-toggle="modal" data-target="#ordermodal">ЗАКАЗАТЬ ДВЕРЬ</a>
+        </div>
+    </section>
+
+
+<section id="more">
+    <a href="#" class="btn">ПОСМОТРИТЕ ВЕСЬ КАТАЛОГ</a>
+</section>
+
+
+<section id="map" style="margin-left:-15px">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+                <div id="client-map-wrapper">
+                    <div id="client-map" class="client-map" style="width: 100%;height: 482px;">
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-5">
+                <div class="contacts">
+                    <h1>Наши магазины</h1>
+                    <div class="row">
+                        <div class="col-md-6" style="margin-top:20px;">
+                            <p>
+                                <strong>М</strong> Проспект Просвещения<br />
+                                ТК «Строй Двор»<br />
+                                пр. Энгельса 138 к. 1, зал 1, секция 10<br />
+                                Тел.: 905-30-04<br />
+                                Тел.: 646-70-46<br />
+                                Часы работы с 11:00 до 20:00 (без выходных).
+                            </p>
+                        </div>
+                        <div class="col-md-6" style="margin-top:20px;">
+                            <p>
+                                <strong>М</strong> Коменданский проспект<br />
+                                ТК «Круиз»<br />
+                                Коменданский проспект д.4 к.2 секция 037<br />
+                                Тел.: 905-30-04<br />
+                                Тел.: 676-85-54<br />
+                                Часы работы с 11:00 до 20:00 (без выходных).
+                            </p>
+                        </div>
+                        <div class="col-md-6" style="margin-top:20px;">
+                            <p>
+                                <strong>М</strong> Звездная<br />
+                                ТК «Торговый Двор»<br />
+                                Московское шоссе д. 7А секция 7-2<br />
+                                Тел.: 905-30-04<br />
+
+                                Часы работы с 11:00 до 20:00 (без выходных).
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<section id="more">
+    <a href="#" class="btn">БОЛЬШЕ ДВЕРЕЙ НА САЙТЕ</a>
+</section>
+
+<footer class="grey">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h4>О компании</h4>
+
+                <ul class="" id="yw3">
+                    <li class="listItem top-menu__item"><a class="listItemLink" href="http://dver-montazh.ru/contacts">Адреса магазинов</a></li>
+                    <li class="listItem top-menu__item"><a class="listItemLink" href="http://dver-montazh.ru/gallery">Наши работы</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h4>Покупателю</h4>
+
+                <ul class="" id="yw4">
+                    <li class="listItem top-menu__item"><a class="listItemLink" href="http://dver-montazh.ru/zamer-i-ustanovka">Замер и установка</a></li>
+                    <li class="listItem top-menu__item"><a class="listItemLink" href="http://dver-montazh.ru/uslugi-i-ceny">Услуги и цены</a></li>
+                    <li class="listItem top-menu__item"><a class="listItemLink" href="http://dver-montazh.ru/store/sale">Акции</a></li>
+                    <li class="listItem top-menu__item"><a class="listItemLink" href="http://dver-montazh.ru/porogi">Пороги</a></li>
+                </ul>            </div>
+            <div class="col-md-3">
+                <h4>Каталог</h4>
+
+                <ul class="" id="yw5">
+                    <li class="listItem top-menu__item"><a class="listItemLink" href="http://dver-montazh.ru/store/mezhkomnatnye-dveri">Межкомнатные двери</a></li>
+                    <li class="listItem top-menu__item"><a class="listItemLink" href="http://dver-montazh.ru/store/vhodnye-dveri">Входные двери</a></li>
+                </ul>            </div>
+
+            <div class="col-md-3">
+                <h4>Наши магазины</h4>
+                <p>
+                    <strong>М</strong> Проспект Просвещения<br>
+                    ТК «Строй Двор»<br>
+                    Тел.: 905-30-04<br>
+                    Тел.: 646-70-46<br>
+                    Часы работы с 11:00 до 20:00 (без выходных).
+                </p>
+            </div>
+
+            <div class="pull-left">
+                Принимаем к оплате:<br>
+                <img src="/img/mc.png">
+                <img src="/img/visa.png">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                Разработано: <a href="#">RandyWendy</a>
+            </div>
+            <div class="col-md-6">
+                <div class="centered">
+                    © ООО «Хоум Дорс» 2016 г
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<script src="js/jquery.cycle2.min.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
+<script src="js/land.js"></script>
+<script src="js/constructor.js"></script>
+
+<script src="http://api-maps.yandex.ru/2.0-stable/?load=package.full&amp;lang=ru-RU" type="text/javascript"></script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter37974980 = new Ya.Metrika({
+                    id:37974980,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/37974980" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+</body>
+</html>
